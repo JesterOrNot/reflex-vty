@@ -2,7 +2,7 @@ image:
   file: .gitpod.Dockerfile
 tasks:
   - init: >
-      cabal new-configure
-      cabal new-build
-      cabal new-repl
+      cabal new-configure &&
+      cabal new-build &&
+      cabal new-repl &&
       cabal new-repl example
